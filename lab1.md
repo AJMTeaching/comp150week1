@@ -1,4 +1,4 @@
-## Lab:
+## Lab 1:
 
 ### Lab Exercise 1: Lists in Python
 

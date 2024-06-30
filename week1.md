@@ -1,8 +1,8 @@
-# week 2: Introduction to Data Structures in Python
+# week 1: Introduction to Data Structures in Python
 
 ## Introduction
 
-Welcome to week 2 of COMP150! This week, we are diving into two of the cornerstones of Python programming: data structures and algorithms. A data structure is a way of organizing and storing data so that it can be accessed and modified efficiently. An algorithm is a sequence of steps used to solve a problem. Understanding when to use which data structures is crucial for writing efficient and well-organized code.
+Welcome to week 1 of COMP150! This week, we are diving into two of the cornerstones of Python programming: data structures and algorithms. A data structure is a way of organizing and storing data so that it can be accessed and modified efficiently. An algorithm is a sequence of steps used to solve a problem. Understanding when to use which data structures is crucial for writing efficient and well-organized code.
 
 In Python, there are both linear and non-linear types of data structures:
 
@@ -124,7 +124,7 @@ example_dict['key1'] = 'new_value1'  # {'key1': 'new_value1', 'key2': 'value2'}
 ```
 ---
 
-# week 2: Diving Deeper into Lists
+# week 1: Diving Deeper into Lists
 
 ## Introduction to Lists
 
@@ -351,7 +351,7 @@ By using these unit tests, we can easily verify that our functions behave as exp
 
 ---
 
-# week 2: Lists vs Strings - A Comparative Analysis
+# week 1: Lists vs Strings - A Comparative Analysis
 
 ## Introduction
 
@@ -526,7 +526,7 @@ Certainly! The `split()` and `join()` methods are powerful tools for manipulatin
 
 ---
 
-# week 2: Working with `split()` and `join()`
+# week 1: Working with `split()` and `join()`
 
 ## Introduction
 
@@ -633,7 +633,7 @@ print(reversed_text)  # Output: 'cherry banana apple'
 
 ---
 
-# week 2: In-Place vs. Non In-Place Operations
+# week 1: In-Place vs. Non In-Place Operations
 
 ## Introduction
 
@@ -729,7 +729,7 @@ Now that you have a good understanding of in-place and non in-place operations, 
 
 ---
 
-# week 2: Sorting Algorithms and Their Complexities
+# week 1: Sorting Algorithms and Their Complexities
 
 ## Introduction
 
@@ -835,7 +835,7 @@ Understanding these complexities helps you choose the most efficient algorithm f
     - Answer: Understanding the complexities helps you choose the most efficient algorithm for your specific needs, balancing factors like time efficiency and memory usage.
 ---
 
-# week 2: Understanding Bubble Sort and Complexity Analysis
+# week 1: Understanding Bubble Sort and Complexity Analysis
 
 ## Introduction
 
@@ -935,7 +935,7 @@ Bubble Sort only uses a constant amount of extra memory for variables like `i` a
 7. **How can you determine the time complexity of an algorithm by looking at its code or pseudocode?**
     - Answer: To determine the time complexity, you examine the number of basic operations the algorithm performs in relation to the size of the input. Count the number of nested loops and consider how many times they run; this will often give you a good indication of the algorithm's time complexity.
 ---
-# week 2: Mastering Dictionaries in Python
+# week 1: Mastering Dictionaries in Python
 
 ## Introduction
 
@@ -1028,7 +1028,7 @@ An alternative way to access values is by using the `get()` method. This method 
 
 ---
 
-# week 2: Advanced Dictionary Operations and Ordering
+# week 1: Advanced Dictionary Operations and Ordering
 
 ## Advanced Operations on Dictionaries
 

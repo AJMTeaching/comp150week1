@@ -2,13 +2,10 @@
 
 # Lab 1
 # Problem 1
-"""
-Your solution goes here
-"""
+# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
+
 # Problem 2
-"""
-Your solution goes here
-"""
+# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
 # -----------------------------------------------------------------------------
 
@@ -48,6 +45,10 @@ def test_count_vowels():
     test(count_vowels("") == 0)
     test(count_vowels("bcdfg") == 0)
     test(count_vowels("aeiouAEIOU") == 10)
+    test(count_vowels("HELLO") == 2)
+    test(count_vowels("aEiOu") == 5)
+    test(count_vowels("a e i o u") == 5)
+    test(count_vowels("rhythm") == 0)
 
 
 # Function 2: merge_lists
@@ -75,6 +76,11 @@ def test_merge_lists():
     test(merge_lists([], []) == [])
     test(merge_lists([1], [2]) == [1, 2])
     test(merge_lists([1, 1], [2, 2]) == [1, 1, 2, 2])
+    test(merge_lists([1, 3, 5], []) == [1, 3, 5])
+    test(merge_lists([], [2, 4, 6]) == [2, 4, 6])
+    test(merge_lists([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6])
+    test(merge_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    test(merge_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
 
 
 # Function 3: word_lengths
@@ -100,6 +106,8 @@ def test_word_lengths():
     test(word_lengths([]) == [])
     test(word_lengths(["word"]) == [4])
     test(word_lengths(["short", "mediummm", "longesttttt"]) == [5, 8, 10])
+    test(word_lengths(["", "a", "ab", "abc"]) == [0, 1, 2, 3])
+    test(word_lengths(["  ", "a b", " c "]) == [2, 3, 3])
 
 
 # Function 4: reverse_string
@@ -125,6 +133,9 @@ def test_reverse_string():
     test(reverse_string("") == "")
     test(reverse_string("a") == "a")
     test(reverse_string("aaa") == "aaa")
+    test(reverse_string("Hello, World!") == "!dlroW ,olleH")
+    test(reverse_string("12345") == "54321")
+    test(reverse_string("  spaces  ") == "  secaps  ")
 
 
 # Function 5: intersection
@@ -152,14 +163,22 @@ def test_intersection():
     test(intersection([], []) == [])
     test(intersection([1, 2], [3, 4]) == [])
     test(intersection([1, 2], [1, 2]) == [1, 2])
+    test(intersection([1, 2, 2, 3], [2, 2, 3, 4]) == [2, 3])
+    test(intersection([1, 2, 3], [4, 5, 6]) == [])
+    test(intersection([1, 2, 3], [1, 2, 3]) == [1, 2, 3])
 
 
 # Test Suite
 def test_suite():
+    print(f"Count Vowels Test Results:")
     test_count_vowels()
+    print(f"Merge Lists Test Results:")
     test_merge_lists()
+    print(f"Word Lengths Test Results:")
     test_word_lengths()
+    print(f"Reverse String Test Results:")
     test_reverse_string()
+    print(f"Intersection Test Results:")
     test_intersection()
 
 
